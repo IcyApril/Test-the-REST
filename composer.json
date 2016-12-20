@@ -1,0 +1,19 @@
+{
+  "name": "icyapril/test-the-rest",
+  "description": "A simple REST API testing framework using PHPUnit and Guzzle.",
+  "type": "project",
+  "require": {
+    "phpunit/phpunit": "^5.7",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Junade Ali",
+      "email": "mjsa@junade.com"
+    }
+  ],
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  }
+}
