@@ -32,9 +32,10 @@ class UserAgentTest extends PHPUnit_Framework_TestCase
         $this->assertRegexp('/Guzzle/', $userAgent);
     }
 
-    public function testPut() {
-        $response = $this->http->request('PUT', 'put');
+    public function testPut()
+    {
+        $response = $this->http->request('PUT', 'user-agent', ['http_errors' => false]);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 405);
     }
 }
